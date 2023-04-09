@@ -19,7 +19,7 @@ pip install pynput
 
 To run the keylogger script, open a terminal window and navigate to the directory where the script is located. Then, run the following command:
 ```
-python3 keylogger.py
+python3 krock.py
 ```
 The keylogger will start running and will capture all keystrokes made by the user. The keystrokes will be saved to a file named 'keylogs.txt', which will be created in the same directory as the script.
 
